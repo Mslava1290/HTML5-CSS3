@@ -1,0 +1,396 @@
+/* 
+При использовании сброса стилей через Body, оставался 
+унаследованный стиль у h1, который имел свой margin и
+ломал макет.  Пришлось сбросить через *
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+} 
+a{
+    text-decoration: none;
+}
+.product{
+    padding: 0px calc(50% - 1200px / 2);
+    background-color: #445161;
+    height: 275px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.product-title{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 69px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+.product-list{
+    padding-bottom: 19px;
+}
+.product-item{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    padding-top: 10px;
+    list-style: none;
+    background: url(img/product-list-item-pic.svg) no-repeat 0 15px;
+    padding-left: 25px;
+
+}
+.product-img{
+    padding-top: 25px;
+    padding-right: 50px;
+    align-self: flex-end;
+}
+.about{
+    padding: 0px calc(50% - 1200px / 2);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 340px;
+}
+.about-title{
+    padding-top: 45px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    color: #445161;
+    padding-bottom: 17px;
+} 
+.about-text{
+    padding-bottom: 11px;
+    width: 646px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+}
+.about-img{
+    align-self: flex-end;
+    padding-right: 50px;
+    padding-top: 45px;
+
+}
+.heading_center{
+    text-align: center;
+    padding-top: 25px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    color: #445161;
+}
+.dignity{
+    padding: 0px calc(50% - 1200px / 2);
+    background-color: #F5F5F5;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.dignity-block{
+    display: flex;
+    flex-direction: row;
+}
+.dignity-list{
+    width: 49%;
+    padding-top: 22px;
+}
+.dignity-list-column{
+    height: 269px;
+}
+.dignity-list-item{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    padding-bottom: 27px;
+    list-style: none;
+    background: url(img/dignity-list-item-pic.svg) no-repeat 0 4px;
+    padding-left: 40px;
+
+}
+.screenshots{
+    padding: 0px calc(50% - 1200px / 2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 490px;
+}
+.screenshots-title{
+    text-align: center;
+    flex-basis: 100%;
+    padding-top: 25px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    color: #445161;
+    padding-bottom: 45px;
+}
+.screenshot-card{
+    width: 48%;
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+}
+.screenshot-pic{
+    margin-right: 10px;
+    padding-bottom: 27px;
+}
+.screenshot-head{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    color: #445161;
+    padding-bottom: 13px;
+}
+.screenshot-desc{
+    margin-top: 0;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+}
+.review-block{
+    padding-top: 31px;
+    padding-bottom: 42px;
+    height: 266px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.reviews{
+    padding: 0px calc(50% - 1200px / 2);
+    background-color: #F5F5F5;
+    height: 400px;
+
+}
+.review_card_column{
+    padding-left: 12px;
+}
+.review_card{
+    width: 564px;
+    height: 121px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 24px;
+}
+.review_text_block{
+    background-color: #ebebeb;
+    width: 483px;
+}
+.review_pic{
+    padding-right: 15px;
+}
+.review_text{
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    padding: 16px 10px 28px 15px;
+}
+.review_name{
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #989898;
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+.buyit{
+    padding: 0px calc(50% - 1200px / 2);
+    height: 656px;
+}
+.card_block{
+    padding-top: 26px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 1000px;
+    margin: 0 auto;
+}
+.price_card{
+    background-color: #445162;
+    border-radius: 5px;
+}
+.card_heading{
+    padding-top: 14px;
+    padding-bottom: 8px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    color: #FFFFFF;
+
+}
+.price_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.price_holder{
+    background: #FFFFFF;
+    border: 2px solid #445162;
+    box-sizing: border-box;
+    width: 300px;
+    height: 70px;
+}
+.price{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 70px;   
+    color: #445162;
+    text-align: center;
+}
+.price-desc{
+    padding-top: 8px;
+}
+.price-desc-item{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;  
+    color: #FFF;
+}
+.button{
+    margin-top: 16px;
+    width: 262px;
+    height: 43px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 19px;
+}
+.button_text{
+    text-align: center;
+    line-height: 43px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: #445161;
+}
+.footer{
+    padding: 0px calc(50% - 1200px / 2);
+    height: 509px;
+    background-color: #445162;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.footer_heading{
+    display: block;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FFFFFF;
+    padding: 25px 0px 43px 0px;
+    text-align: center;
+    flex-basis: 100%;
+}
+.footer-info{
+    height: 405px;
+}
+.forms{
+    width: 503px;
+    height: 405px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 200px;
+}
+.input_text{
+    font-family: Arial;
+    font-size: 13.3333px;
+    border-radius: 5px;
+    margin-bottom: 18px;
+    padding: 12px 0px 7px 12px;
+}
+.contacts{
+    padding-left: 45px;
+}
+.contacts_item{
+    display: flex;
+    flex-direction: column;
+}
+.social_mini{
+    height: 24px;
+    padding-right: 10px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.social_mini_text{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.contact-item-column{
+    display: flex;
+    padding-bottom: 20px;
+}
+.social_button{
+    padding-top: 28px;
+}
+.button-send{
+    margin-top: 16px;
+    width: 143px;
+    height: 43px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 19px;
+    margin: 0px auto;
+}
+.copyright{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    color: #445162;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 12px;
+}
