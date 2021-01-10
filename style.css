@@ -309,11 +309,12 @@ a{
     background-color: #445162;
     display: flex;
     flex-wrap: wrap;
+    font-family: Arial;
 
 }
 .footer_heading{
     display: block;
-    font-family: Arial;
+    font-family: inherit;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
@@ -331,14 +332,17 @@ a{
     height: 405px;
     display: flex;
     flex-direction: column;
-    padding-left: 200px;
+    padding-left: 214px;
 }
 .input_text{
-    font-family: Arial;
-    font-size: 13.3333px;
     border-radius: 5px;
     margin-bottom: 18px;
-    padding: 12px 0px 7px 12px;
+    padding: 14px 11px 14px 11px;
+    border: none;
+    font-family: inherit;
+}
+.input-textarea{
+    resize: none;
 }
 .contacts{
     padding-left: 45px;
@@ -346,10 +350,11 @@ a{
 .contacts_item{
     display: flex;
     flex-direction: column;
+    padding-top: 8px;
 }
 .social_mini{
     height: 24px;
-    padding-right: 10px;
+    padding-right: 4px;
     font-family: Arial;
     font-style: normal;
     font-weight: normal;
@@ -373,13 +378,12 @@ a{
     padding-top: 28px;
 }
 .button-send{
-    margin-top: 16px;
     width: 143px;
     height: 43px;
     background-color: #fff;
     border-radius: 5px;
-    margin-bottom: 19px;
     margin: 0px auto;
+    border: none;
 }
 .copyright{
     font-family: Arial;
