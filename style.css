@@ -234,7 +234,6 @@ body{
     top: 42px;
     left: -38px;
 }
-
 .review_pic{
     padding-right: 15px;
     width: 66px;
@@ -396,7 +395,44 @@ body{
 }
 .social_button{
     padding-top: 28px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+.fab{
+    color: #FFF;
+    border-radius: 6px;
+    font-size: 36px;
+    text-align: center;
+}
+.fa-twitter{
+    background-color: #1da1f2;
+}
+.fa-vk{
+    background-color: #2787F5;
+}
+.fa-google-plus-g{
+    background-color: #dd4b39;
+}
+.fa-facebook-f{
+    background-color: #3b5998;
+}
+.fa-twitter:hover{
+    filter: brightness(110%);
+}
+.fa-vk:hover{
+    filter: brightness(110%);
+}
+.fa-google-plus-g:hover{
+    filter: brightness(110%);
+}
+.fa-facebook-f:hover{
+    filter: brightness(110%);
+}
+
+
+
+
 .button-send{
     width: 143px;
     height: 43px;
