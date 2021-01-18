@@ -11,7 +11,7 @@ a{
     text-decoration: none;
 }
 body{
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
 }
@@ -212,14 +212,28 @@ body{
     padding-bottom: 24px;
 }
 .review_text_block{
+    position: relative;
     background-color: #ebebeb;
     width: 483px;
 }
+ .review_text_block::before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-right: 30px solid #ebebeb;
+    top: 42px;
+    left: -38px;
+}
+
 .review_pic{
     padding-right: 15px;
+    width: 66px;
 }
 .review_text{
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-style: italic;
     font-weight: normal;
     font-size: 14px;
@@ -228,7 +242,7 @@ body{
     padding: 16px 10px 28px 15px;
 }
 .review_name{
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-style: italic;
     font-weight: normal;
     font-size: 14px;
