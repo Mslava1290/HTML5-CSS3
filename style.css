@@ -3,7 +3,6 @@
 унаследованный стиль у h1, который имел свой margin и
 ломал макет.  Пришлось сбросить через *
 */
-
 *{
     margin: 0;
     padding: 0;
@@ -31,9 +30,11 @@ a{
     flex-wrap: wrap;
     padding-top: 25px;
     padding-bottom: 30px;
+    width: 45%;
 }
 .product-list{
     padding-bottom: 19px;
+    width: 45%;
 }
 .product-item{
     font-family: Arial;
@@ -49,8 +50,17 @@ a{
 
 }
 .product-img{
+    height: 100%;
+    background-image: url(img/product_pic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 45%;
+    align-self: flex-end;
+    margin: 25px 0px;
+}
+.product-vid{
     padding-top: 25px;
-    padding-right: 50px;
     align-self: flex-end;
 }
 .about{
