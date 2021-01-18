@@ -10,6 +10,11 @@
 a{
     text-decoration: none;
 }
+body{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+}
 .product{
     padding: 0px calc(50% - 1200px / 2);
     background-color: #445161;
@@ -19,8 +24,6 @@ a{
     flex-wrap: wrap;
 }
 .product-title{
-    font-family: Arial;
-    font-style: normal;
     font-weight: normal;
     font-size: 60px;
     line-height: 69px;
@@ -37,9 +40,6 @@ a{
     width: 45%;
 }
 .product-item{
-    font-family: Arial;
-    font-style: normal;
-    font-weight: normal;
     font-size: 20px;
     line-height: 23px;
     color: #FFFFFF;
@@ -71,10 +71,8 @@ a{
     height: 340px;
 }
 .about-title{
-    padding-top: 45px;
-    font-family: Arial;
-    font-style: normal;
     font-weight: normal;
+    padding-top: 45px;
     font-size: 30px;
     line-height: 36px;
     color: #445161;
@@ -83,9 +81,6 @@ a{
 .about-text{
     padding-bottom: 11px;
     width: 646px;
-    font-family: Arial;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 24px;
     color: #333333;
@@ -97,11 +92,9 @@ a{
 
 }
 .heading_center{
+    font-weight: normal;
     text-align: center;
     padding-top: 25px;
-    font-family: Arial;
-    font-style: normal;
-    font-weight: normal;
     font-size: 30px;
     line-height: 36px;
     color: #445161;
@@ -127,9 +120,6 @@ a{
     height: 269px;
 }
 .dignity-list-item{
-    font-family: Arial;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 24px;
     color: #333333;
@@ -150,9 +140,6 @@ a{
     padding-bottom: 25px;
 }
 .dignity-list-item-detail{
-    font-family: Arial;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 24px;
     color: #333333;
@@ -167,12 +154,10 @@ a{
     height: 490px;
 }
 .screenshots-title{
+    font-weight: normal;
     text-align: center;
     flex-basis: 100%;
     padding-top: 25px;
-    font-family: Arial;
-    font-style: normal;
-    font-weight: normal;
     font-size: 30px;
     line-height: 36px;
     color: #445161;
@@ -189,8 +174,6 @@ a{
     padding-bottom: 27px;
 }
 .screenshot-head{
-    font-family: Arial;
-    font-style: normal;
     font-weight: normal;
     font-size: 24px;
     line-height: 30px;
@@ -199,9 +182,6 @@ a{
 }
 .screenshot-desc{
     margin-top: 0;
-    font-family: Arial;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 24px;
     color: #333333;
@@ -277,9 +257,6 @@ a{
 .card_heading{
     padding-top: 14px;
     padding-bottom: 8px;
-    font-family: Arial;
-    font-style: normal;
-    font-weight: normal;
     font-size: 24px;
     line-height: 30px;
     color: #FFFFFF;
@@ -298,9 +275,6 @@ a{
     height: 70px;
 }
 .price{
-    font-family: Arial;
-    font-style: normal;
-    font-weight: normal;
     font-size: 40px;
     line-height: 70px;   
     color: #445162;
@@ -310,9 +284,6 @@ a{
     padding-top: 8px;
 }
 .price-desc-item{
-    font-family: Arial;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 24px;  
     color: #FFF;
@@ -386,17 +357,11 @@ a{
 .social_mini{
     height: 24px;
     padding-right: 4px;
-    font-family: Arial;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;
 }
 .social_mini_text{
-    font-family: Arial;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;
@@ -417,9 +382,6 @@ a{
     border: none;
 }
 .copyright{
-    font-family: Arial;
-    font-style: normal;
-    font-weight: normal;
     font-size: 12px;
     line-height: 24px;
     letter-spacing: 0.3px;
