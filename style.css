@@ -109,7 +109,7 @@ a{
 .dignity{
     padding: 0px calc(50% - 1200px / 2);
     background-color: #F5F5F5;
-    height: 400px;
+    min-height: 400px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -117,10 +117,11 @@ a{
 .dignity-block{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    padding-top: 22px;
 }
 .dignity-list{
     width: 49%;
-    padding-top: 22px;
 }
 .dignity-list-column{
     height: 269px;
@@ -132,11 +133,31 @@ a{
     font-size: 16px;
     line-height: 24px;
     color: #333333;
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start;
+}
+.dignity-list-item::before{
+    content: '+';
+    color:#fff;
+    background-color: #445161;
+    padding: 5px 8px;
+    font-size: 30px;
+    margin-right: 8px;
+    margin-top: 5px;
+}
+.dignity-list-item-padding{
+    padding-bottom: 25px;
+}
+.dignity-list-item-detail{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    padding-left: 41px;
     padding-bottom: 27px;
-    list-style: none;
-    background: url(img/dignity-list-item-pic.svg) no-repeat 0 4px;
-    padding-left: 40px;
-
 }
 .screenshots{
     padding: 0px calc(50% - 1200px / 2);
