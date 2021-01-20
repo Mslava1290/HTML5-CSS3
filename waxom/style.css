@@ -3,19 +3,24 @@
 Поправить ширину стрелок
 
 Анимации наведения
-                menu
-                стрелки
-                точки
     Корзина и лупа.
+    services
+    dot поменять. Нет анимации. 
+
  
  
- 
-    */
+*/
  *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     max-width: 1920px;
+}
+*,
+::before,
+::after,
+:active{
+    transition: .3s;
 }
 a{
     text-decoration: none;
@@ -157,6 +162,7 @@ h3{
     background-image: url(img/dot_2.svg);
 }
 .services{
+    padding-top: 90px;
     height: 380px;
     display: flex;
     flex-direction: row;
@@ -168,14 +174,19 @@ h3{
     align-items: center;
     width: 270px;
 }
+.services_icon{
+    fill: #555555;
+    padding-bottom: 30px;
+}
 .services_heading{
     font-family: Raleway, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 22px;
     line-height: 26px;
-    color: #555555;  
-}
+    color: #555555;
+    padding-bottom: 20px;
+}  
 .services_text{
     font-family: Montserrat, sans-serif;
     font-style: normal;
@@ -184,16 +195,14 @@ h3{
     line-height: 17px;
     text-align: center;
     color: #000000;
+    padding-bottom: 30px;
 }
-.services_web{
-
+.services_block::after{
+    content:'';
+    width: 70px;
+    height: 3px;
+    background-color: #F1EEE9;
 }
-.services_dev{
-
-}
-.services_custom{
-
-}
-.services_market{
-
+.services_block:hover{
+    fill:#C7B299;
 }
