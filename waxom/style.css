@@ -1,5 +1,4 @@
 /* 
-Подключить шрифты
 Поправить ширину стрелок
 
 Анимации наведения
@@ -11,6 +10,54 @@ realization
     screenshots!
  
 */
+
+/* Raleway Regular 400 */
+@font-face{
+    font-family: 'Raleway';
+    src: url(/Waxom/fonts/Raleway/Raleway-Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* Raleway Medium 500 */
+@font-face{
+    font-family: 'Raleway';
+    src: url(/Waxom/fonts/Raleway/Raleway-Medium.ttf);
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* Raleway SemiBold 600 */
+@font-face{
+    font-family: 'Raleway';
+    src: url(/Waxom/fonts/Raleway/Raleway-SemiBold.ttf);
+    font-style: normal;
+    font-weight: 600;
+}
+
+/* Montserrat Light 300 */
+@font-face{
+    font-family: 'Montserrat';
+    src: url(/Waxom/fonts/Montserrat/Montserrat-Light.ttf);
+    font-style: normal;
+    font-weight: 300;
+}
+
+/* Montserrat Regular 400 */
+@font-face{
+    font-family: 'Montserrat';
+    src: url(/Waxom/fonts/Montserrat/Montserrat-Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* Roboto Regular 400 */
+@font-face{
+    font-family: 'Roboto';
+    src: url(/Waxom/fonts/Roboto/Roboto-Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
 * {
     margin: 0;
     padding: 0;
@@ -52,7 +99,6 @@ a {
 
 .heading_text {
     font-family: Raleway, sans-serif;
-    font-style: normal;
     font-weight: normal;
     font-size: 34px;
     line-height: 40px;
@@ -75,7 +121,6 @@ a {
 
 .menu_link {
     font-family: Montserrat, sans-serif;
-    font-style: normal;
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
@@ -122,7 +167,6 @@ a {
 
 h1 {
     font-family: Raleway, sans-serif;
-    font-style: normal;
     font-weight: 600;
     font-size: 52px;
     line-height: 61px;
@@ -131,7 +175,6 @@ h1 {
 
 h2 {
     font-family: Raleway, sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 36px;
     line-height: 42px;
@@ -140,7 +183,6 @@ h2 {
 
 h3 {
     font-family: Montserrat, sans-serif;
-    font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
@@ -158,7 +200,6 @@ h3 {
     border-radius: 3px;
 
     font-family: Roboto, sans-serif;
-    font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 16px;
@@ -211,7 +252,6 @@ h3 {
 
 .services_heading {
     font-family: Raleway, sans-serif;
-    font-style: normal;
     font-weight: 600;
     font-size: 22px;
     line-height: 26px;
@@ -221,7 +261,6 @@ h3 {
 
 .services_text {
     font-family: Montserrat, sans-serif;
-    font-style: normal;
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
@@ -248,7 +287,6 @@ h3 {
 
 .realization_heading {
     font-family: Raleway, sans-serif;
-    font-style: normal;
     font-weight: 600;
     font-size: 30px;
     line-height: 35px;
@@ -260,7 +298,6 @@ h3 {
 
 .realization_text {
     font-family: Montserrat, sans-serif;
-    font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 20px;
@@ -270,7 +307,7 @@ h3 {
 }
 
 .purchase {
-    max-height: 150px;
+    height: 150px;
     background-image: radial-gradient(94.87% 15543.47% at 4.58% 100%, #211B19 0%, #4E3326 100%);
     display: flex;
     flex-direction: column;
@@ -278,13 +315,12 @@ h3 {
 }
 
 .purchase_textblock {
-    width: 524px;
+    width: 545px;
     height: 150px;
 }
 
 .purchase_heading {
     font-family: Raleway, sans-serif;
-    font-style: normal;
     font-weight: normal;
     font-size: 28px;
     line-height: 33px;
@@ -294,7 +330,6 @@ h3 {
 
 .purchase_text {
     font-family: Montserrat, sans-serif;
-    font-style: normal;
     font-weight: 300;
     font-size: 18px;
     line-height: 22px;
@@ -313,7 +348,6 @@ h3 {
 
 .projects_heading {
     font-family: Raleway,sans-serif;
-    font-style: normal;
     font-weight: 600;
     font-size: 30px;
     line-height: 35px;
@@ -323,7 +357,6 @@ h3 {
 
 .projects_text {
     font-family: Montserrat,sans-serif;
-    font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 20px;
@@ -337,7 +370,6 @@ h3 {
     width: 120px;
     height: 32px;
     border: 1px solid #ebebeb;
-    text-align: 
 }
 .projects_block_column {}
 
