@@ -281,8 +281,10 @@ h3 {
 }
 
 .realization {
-    max-height: 700px;
+    height: 677px;
     background-color: #FBFAF8;
+    display: flex;
+    flex-direction: column;
 }
 
 .realization_heading {
@@ -306,6 +308,33 @@ h3 {
     padding-bottom: 20px;
 }
 
+.realization_block {
+    position: relative;
+    height: 500px;
+    top: -500px;
+}
+.realization_screen {
+    position: absolute;
+ 
+}
+.realization_screen_center {
+    z-index: 1;
+    margin: 0 auto;
+}
+.realization_screen_left {
+    top: 100px;
+    left: 23px;
+}
+.realization_screen_left:hover{
+    z-index: 1;
+}
+.realization_screen_right:hover{
+    z-index: 1;
+}
+.realization_screen_right {
+    top: 100px;
+    left: 483px;
+}
 .purchase {
     height: 150px;
     background-image: radial-gradient(94.87% 15543.47% at 4.58% 100%, #211B19 0%, #4E3326 100%);
@@ -313,7 +342,6 @@ h3 {
     flex-direction: column;
     flex-wrap: wrap;
 }
-
 .purchase_textblock {
     width: 545px;
     height: 150px;
