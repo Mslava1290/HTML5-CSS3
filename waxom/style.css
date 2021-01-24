@@ -1,5 +1,6 @@
 /* 
 Поправить ширину стрелок
+Проверь шрифты
 
 Анимации наведения
     Корзина и лупа.
@@ -16,7 +17,7 @@ realization
 /* Raleway Regular 400 */
 @font-face{
     font-family: 'Raleway';
-    src: url(/Waxom/fonts/Raleway/Raleway-Regular.ttf);
+    src: url(fonts/Raleway/Raleway-Regular.ttf);
     font-style: normal;
     font-weight: 400;
 }
@@ -24,7 +25,7 @@ realization
 /* Raleway Medium 500 */
 @font-face{
     font-family: 'Raleway';
-    src: url(/Waxom/fonts/Raleway/Raleway-Medium.ttf);
+    src: url(fonts/Raleway/Raleway-Medium.ttf);
     font-style: normal;
     font-weight: 500;
 }
@@ -32,7 +33,7 @@ realization
 /* Raleway SemiBold 600 */
 @font-face{
     font-family: 'Raleway';
-    src: url(/Waxom/fonts/Raleway/Raleway-SemiBold.ttf);
+    src: url(fonts/Raleway/Raleway-SemiBold.ttf);
     font-style: normal;
     font-weight: 600;
 }
@@ -40,7 +41,7 @@ realization
 /* Montserrat Light 300 */
 @font-face{
     font-family: 'Montserrat';
-    src: url(/Waxom/fonts/Montserrat/Montserrat-Light.ttf);
+    src: url(fonts/Montserrat/Montserrat-Light.ttf);
     font-style: normal;
     font-weight: 300;
 }
@@ -48,7 +49,7 @@ realization
 /* Montserrat Regular 400 */
 @font-face{
     font-family: 'Montserrat';
-    src: url(/Waxom/fonts/Montserrat/Montserrat-Regular.ttf);
+    src: url(fonts/Montserrat/Montserrat-Regular.ttf);
     font-style: normal;
     font-weight: 400;
 }
@@ -56,7 +57,7 @@ realization
 /* Roboto Regular 400 */
 @font-face{
     font-family: 'Roboto';
-    src: url(/Waxom/fonts/Roboto/Roboto-Regular.ttf);
+    src: url(fonts/Roboto/Roboto-Regular.ttf);
     font-style: normal;
     font-weight: 400;
 }
@@ -455,7 +456,7 @@ h3 {
 }
 
 .projects_screen_text {
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
