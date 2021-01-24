@@ -8,7 +8,9 @@
 
 realization
     screenshots!
- 
+
+ширина tlg
+стрелки позишн
 */
 
 /* Raleway Regular 400 */
@@ -305,7 +307,7 @@ h3 {
     line-height: 20px;
     text-align: center;
     color: #8C8C8C;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 .realization_block {
@@ -369,11 +371,12 @@ h3 {
     margin-top: 56px;
     align-self: flex-end;
 }
-
 .projects {
     height: 1160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
 .projects_heading {
     font-family: Raleway,sans-serif;
     font-weight: 600;
@@ -381,30 +384,86 @@ h3 {
     line-height: 35px;
     text-align: center;
     color: #555555;
+    padding-top: 44px;
+    padding-bottom: 9px;
 }
 
 .projects_text {
+    max-width: 800px;
     font-family: Montserrat,sans-serif;
     font-weight: 300;
     font-size: 16px;
     line-height: 20px;
     text-align: center;
     color: #8C8C8C;
+    padding-bottom: 27px;
 }
 
-.projects_nav {}
-
-.projects_nav_button{
-    width: 120px;
-    height: 32px;
-    border: 1px solid #ebebeb;
+.projects_nav_buttons{
+    padding: 7px 20px;
+    border: 1px solid #EBEBEB;
+    border-radius: 3px;
+    background-color: #fff;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #8C8C8C;
+    margin-left: 10px;
 }
-.projects_block_column {}
+.projects_nav_buttons_small {
+    padding: 7px 25px;
+}
+.projects_nav_buttons:hover{
+    color: #fff;
+    background-color: #998575;
+}
 
-.projects figure {}
+.projects_screen_block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.projects_screen_img{
+    display: block;
+    padding-top: 70px;
+}
+.projects_screen_description {
+    position: relative;
+    background-color: #FBFAF8;
+}
+.projects_screen_description::before{
+    position: absolute;
+    left: 6px;
+    top: -36px;
+    content: ' ';
+    width: 0px;
+    border: 25px solid transparent;
+    border-bottom: 20px solid #FBF9F7;
+}
+.projects_screen_heading {
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #C7B299;
+    padding: 20px 8px 8px 25px;
+}
 
-.projects figcaption {}
-
-.projects figcaption .projects_heading {}
-
-.projects figcaption .projects_text {}
+.projects_screen_text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #D1D1D1;
+    padding-left: 25px;
+    padding-bottom: 30px;
+}
+.projects_buttons{
+    margin-top: 47px;
+}
