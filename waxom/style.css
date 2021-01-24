@@ -617,3 +617,206 @@ h3 {
     display: block;
     margin: 15px auto;
 }
+
+.post_block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.post_card{
+    width: 370px;
+    position: relative;
+}
+.post_card_img{
+    display: block;
+}
+.post_card_description{
+    border: 1px solid #B3B3B3;
+    padding: 0px 23px;
+}
+.post_heading{
+    padding-top: 100px;
+}
+.post_text{
+    padding-top: 20px;
+    width: 770px;
+    margin: auto;
+    padding-bottom: 30px;
+}
+.post_card_description{
+    padding-bottom: 22px;
+}
+.post_card_heading {
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #555555;
+    padding-top: 31px;
+}
+.post_card_text {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    color: #000000;
+    padding-top: 22px;
+    padding-bottom: 17px;
+}
+.post_card_link{
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;   
+    color: #C7B299;
+}
+
+.post_card_date {
+    position: absolute;
+    top: 18px;
+    left: 23px;
+}
+.post_card_day {
+    background-color: #363636;
+    border-radius: 3px;
+    width: 50px;
+}
+
+.post_card_month {
+    position: absolute;
+    width: 50px;
+    top: 33px;
+    background-color: #242424;
+    border-radius: 0px 0px 3px 3px;
+}
+.post_card_day_text {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 37px;   
+    color: #FFFFFF;
+    text-align: center;
+}
+.post_card_month_text {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.post_card_link::after{
+    content: '';
+    border: 4px solid transparent;
+    border-left: 7px solid#C7B299;
+    position: absolute;
+    left: 108px;
+    bottom: 27px;
+}
+.post_arrow{
+    padding-top: 54px;
+    padding-bottom: 38px;
+    width: 65px;
+    height: 22px;
+    display: flex;
+    flex-direction: row;
+    fill:#D1D1D1;
+    margin: 0 auto;
+}
+.post_arrow_right{
+    margin-left: 18px;
+    rotate: 180deg;
+}
+.partner{
+    height: 489px;
+    background-image: url(img/partner_background.png);
+}
+.footer_column {
+    width: 270px;
+}
+.partner_block{
+    padding-top: 140px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer {
+    max-height: 625px;
+    background-color: #191919;
+}
+.footer_block{
+    padding-top: 108px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 128px;
+}
+
+.footer_column {
+    text-align: center;
+}
+
+.footer_column_main_text{
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #555555;
+    text-align: left;
+}
+.footer_link{
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #D1D1D1;
+}
+.footer_heading {
+    text-align: left;
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    padding-bottom: 24px;
+}
+.footer_column_second_text{
+    text-align: left;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    color: #363636;
+    padding-bottom: 6px;
+}    
+.footer_column_post_text{
+    text-align: left;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #555555;
+    padding-bottom: 16px;
+
+}
+.footer_bottom{
+    background-color: #101010;
+    height: 115px;
+    display: flex;
+    align-items: center;
+}
+.footer_block_copyright{
+    display: flex;
+    justify-content: space-between;
+    width: 33%;
+}
