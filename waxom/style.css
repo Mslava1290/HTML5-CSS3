@@ -1088,3 +1088,6 @@ details summary::-webkit-details-marker {
 .footer_copyright_cell:hover .footer_column_main_text{
     color: #C7B299;
 }
+.hidden{
+    display: none;
+}
