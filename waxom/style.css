@@ -2,16 +2,22 @@
 Поправить ширину стрелок
 Проверь шрифты
 
-Анимации наведения
-    Корзина и лупа.
-    services
-    dot поменять. Нет анимации. 
-
-realization
-    screenshots!
-
 ширина tlg
 стрелки позишн
+ПРОВЕРЬ ВАЛИДАТОРОМ!
+================
+
+    Трансформации (увеличения изображения при наведении)
+    Поворота (добавить поворот элемента на 180 или на 360 градусов, при наведении на него)
+    Сделать трансформацию элементов плавной (transition)
+    *Анимации (по желанию) 
+    ### 2. *Для некоторых элементов применить функцию, которая позволяет изменять скорость перехода в процессе его осуществления. 
+    ### 3. *Использовать для некоторых элементов множественную анимацию. 
+    ### 4. *Усовершенствовать созданные на предыдущих уроках страницы сайта. Изменить шрифты используемые на страницах. 
+        при необходимости разместить текстовую информацию, используя колонки. 
+    ### 5. *Усовершенствовать страницы сайта так, чтобы было комфортно их просматривать на мобильных устройствах.
+
+================
 */
 
 /* Raleway Regular 400 */
@@ -74,9 +80,7 @@ body {
 }
 
 *,
-::before,
-::after,
-:active {
+::before, ::after, :active, :hover{
     transition: .3s;
     outline: 0;
     outline-offset: 0;
@@ -235,8 +239,11 @@ h3 {
     line-height: 16px;
     text-align: center;
     color: #FFFFFF;
+    box-shadow: inset 0px -3px #7e7065;
 }
-
+.button:active {
+    box-shadow:none;
+}
 .slider_bottom {
     width: 100px;
     display: flex;
@@ -310,11 +317,18 @@ h3 {
     height: 3px;
     background-color: #F1EEE9;
 }
-
-.services_block:hover {
-    fill: #C7B299;
+.services_block:hover .services_icon{
+    fill:#C7B299;
 }
-
+.services_block:hover .services_heading{
+    color: #C7B299;
+} 
+.services_block:hover .services_text{
+    color: #C7B299;
+}
+.services_block:hover::after{
+    background-color: #C7B199;
+}
 .realization {
     height: 696px;
     background-color: #FBFAF8;
@@ -457,7 +471,6 @@ h3 {
 
 .projects_screen_img {
     display: block;
-    padding-top: 70px;
 }
 .projects_screen_img:hover {
 }
@@ -466,11 +479,31 @@ h3 {
     position: relative;
     background-color: #FBFAF8;
 }
-
-.projects_screen_description::before {
+.projects_fig {
+    position: relative;
+    margin-top: 70px;
+}
+.projects_screen_img_overlay{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 237px;
+    background-color: #00000075;
+    opacity: 0;
+}
+.projects_screen_img_overlay_icon{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+.projects_fig::before {
     position: absolute;
     left: 6px;
-    top: -36px;
+    top: 195px;
     content: ' ';
     width: 0px;
     border: 25px solid transparent;
@@ -503,6 +536,27 @@ h3 {
     margin-bottom: 33px;
 }
 
+.projects_fig:hover .projects_screen_img{
+}
+
+.projects_fig:hover .projects_screen_description{
+    background-color: #352F2D;
+}
+.projects_fig:hover .projects_screen_heading{
+    color: #fff;
+}
+.projects_fig:hover .projects_screen_text{
+    color: #C7B299;
+}
+.projects_fig:hover::before{
+    border-bottom: 20px solid #5F5957;
+}
+.projects_screen_img_overlay_icon_link:hover{
+    transform: scale(1.2);
+}
+.projects_fig:hover .projects_screen_img_overlay{
+    opacity: 1;
+}
 .video {
     height: 705px;
     background-image: url(img/video_presentation.png);
@@ -587,6 +641,7 @@ h3 {
 
 .mobile_list {
     padding-left: 52px;
+    position: relative;
 }
 details summary::-webkit-details-marker {
     display:none;
@@ -602,15 +657,20 @@ details summary::-webkit-details-marker {
     content: '';
     background-image: url(img/mobile_list_pic.svg);
     background-repeat: no-repeat;
-    padding: 3px 34px 3px 0px;
-    background-position: center;
+    padding: 21px 34px 3px 4px;
+    position: absolute;
+    left: 37px;
 }
 
 .mobile_list_item_padding {
-    padding-left: 44px;
+    padding-left: 10px;
     text-align: left;
 }
+.mobile_list_item:hover::before{
+    transform: rotate(90deg);
+    transform-origin: 28% 46%;
 
+}
 .counters {
     height: 211px;
 }
@@ -788,7 +848,7 @@ details summary::-webkit-details-marker {
 
 .post_arrow_right {
     margin-left: 18px;
-    rotate: 180deg;
+    transform: rotate(180deg);
 }
 
 .partner {
