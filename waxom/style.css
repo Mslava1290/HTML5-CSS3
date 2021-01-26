@@ -2,16 +2,22 @@
 Поправить ширину стрелок
 Проверь шрифты
 
-Анимации наведения
-    Корзина и лупа.
-    services
-    dot поменять. Нет анимации. 
-
-realization
-    screenshots!
-
 ширина tlg
 стрелки позишн
+ПРОВЕРЬ ВАЛИДАТОРОМ!
+================
+
+    Трансформации (увеличения изображения при наведении)
+    Поворота (добавить поворот элемента на 180 или на 360 градусов, при наведении на него)
+    Сделать трансформацию элементов плавной (transition)
+    *Анимации (по желанию) 
+    ### 2. *Для некоторых элементов применить функцию, которая позволяет изменять скорость перехода в процессе его осуществления. 
+    ### 3. *Использовать для некоторых элементов множественную анимацию. 
+    ### 4. *Усовершенствовать созданные на предыдущих уроках страницы сайта. Изменить шрифты используемые на страницах. 
+        при необходимости разместить текстовую информацию, используя колонки. 
+    ### 5. *Усовершенствовать страницы сайта так, чтобы было комфортно их просматривать на мобильных устройствах.
+
+================
 */
 
 /* Raleway Regular 400 */
@@ -74,9 +80,7 @@ body {
 }
 
 *,
-::before,
-::after,
-:active {
+::before, ::after, :active, :hover{
     transition: .3s;
     outline: 0;
     outline-offset: 0;
@@ -235,8 +239,11 @@ h3 {
     line-height: 16px;
     text-align: center;
     color: #FFFFFF;
+    box-shadow: inset 0px -3px #7e7065;
 }
-
+.button:active {
+    box-shadow:none;
+}
 .slider_bottom {
     width: 100px;
     display: flex;
@@ -310,11 +317,18 @@ h3 {
     height: 3px;
     background-color: #F1EEE9;
 }
-
-.services_block:hover {
-    fill: #C7B299;
+.services_block:hover .services_icon{
+    fill:#C7B299;
 }
-
+.services_block:hover .services_heading{
+    color: #C7B299;
+} 
+.services_block:hover .services_text{
+    color: #C7B299;
+}
+.services_block:hover::after{
+    background-color: #C7B199;
+}
 .realization {
     height: 696px;
     background-color: #FBFAF8;
@@ -457,7 +471,6 @@ h3 {
 
 .projects_screen_img {
     display: block;
-    padding-top: 70px;
 }
 .projects_screen_img:hover {
 }
@@ -466,11 +479,31 @@ h3 {
     position: relative;
     background-color: #FBFAF8;
 }
-
-.projects_screen_description::before {
+.projects_fig {
+    position: relative;
+    margin-top: 70px;
+}
+.projects_screen_img_overlay{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 237px;
+    background-color: #00000075;
+    opacity: 0;
+}
+.projects_screen_img_overlay_icon{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+.projects_fig::before {
     position: absolute;
     left: 6px;
-    top: -36px;
+    top: 195px;
     content: ' ';
     width: 0px;
     border: 25px solid transparent;
@@ -503,6 +536,27 @@ h3 {
     margin-bottom: 33px;
 }
 
+.projects_fig:hover .projects_screen_img{
+}
+
+.projects_fig:hover .projects_screen_description{
+    background-color: #352F2D;
+}
+.projects_fig:hover .projects_screen_heading{
+    color: #fff;
+}
+.projects_fig:hover .projects_screen_text{
+    color: #C7B299;
+}
+.projects_fig:hover::before{
+    border-bottom: 20px solid #5F5957;
+}
+.projects_screen_img_overlay_icon_link:hover{
+    transform: scale(1.2);
+}
+.projects_fig:hover .projects_screen_img_overlay{
+    opacity: 1;
+}
 .video {
     height: 705px;
     background-image: url(img/video_presentation.png);
@@ -587,6 +641,7 @@ h3 {
 
 .mobile_list {
     padding-left: 52px;
+    position: relative;
 }
 details summary::-webkit-details-marker {
     display:none;
@@ -602,15 +657,20 @@ details summary::-webkit-details-marker {
     content: '';
     background-image: url(img/mobile_list_pic.svg);
     background-repeat: no-repeat;
-    padding: 3px 34px 3px 0px;
-    background-position: center;
+    padding: 21px 34px 3px 4px;
+    position: absolute;
+    left: 37px;
 }
 
 .mobile_list_item_padding {
-    padding-left: 44px;
+    padding-left: 10px;
     text-align: left;
 }
+.mobile_list_item:hover::before{
+    transform: rotate(90deg);
+    transform-origin: 28% 46%;
 
+}
 .counters {
     height: 211px;
 }
@@ -677,8 +737,12 @@ details summary::-webkit-details-marker {
 }
 
 .post_card_description {
-    border: 1px solid #B3B3B3;
+    border-bottom: 1px solid #B3B3B3;
+    border-left: 1px solid #B3B3B3;
+    border-right: 1px solid #B3B3B3;
+    border-top: 1px solid transparent;
     padding: 0px 23px;
+    padding-bottom: 22px;
 }
 
 .post_heading {
@@ -690,10 +754,6 @@ details summary::-webkit-details-marker {
     width: 770px;
     margin: auto;
     padding-bottom: 30px;
-}
-
-.post_card_description {
-    padding-bottom: 22px;
 }
 
 .post_card_heading {
@@ -730,6 +790,7 @@ details summary::-webkit-details-marker {
     position: absolute;
     top: 18px;
     left: 23px;
+    z-index: 1;
 }
 
 .post_card_day {
@@ -775,20 +836,63 @@ details summary::-webkit-details-marker {
     bottom: 25px;
 }
 
-.post_arrow {
+.post_card:hover .post_card_day {
+    background-color: #C7B199; 
+}
+
+.post_card:hover .post_card_month {
+    background-color: #A48D71;
+}
+
+.post_card:hover .post_card_description {
+    background-color: #352F2D;
+    border-bottom: 1px solid #352F2D;
+    border-left: 1px solid #352F2D;
+    border-right: 1px solid #352F2D;
+}
+
+.post_card:hover .post_card_heading {
+    color: #C7B299;
+}
+
+.post_card:hover .post_card_text {
+    color: #fff;
+}
+
+.post_card_img_overlay {
+    position: absolute;
+    width: 100%;
+    height: 220px;
+    top: 0;
+    opacity: 0;
+    background-color: #00000075;
+}
+
+.post_card:hover .post_card_img_overlay {
+    opacity: 1;
+}
+
+.post_arrow_block {
     padding-top: 54px;
     padding-bottom: 38px;
     width: 65px;
-    height: 22px;
     display: flex;
     flex-direction: row;
     fill: #D1D1D1;
     margin: 0 auto;
 }
 
+.post_arrow_left, .post_arrow_right{
+    height: 22px;
+}
+
 .post_arrow_right {
     margin-left: 18px;
-    rotate: 180deg;
+    transform: rotate(180deg);
+}
+
+.post_arrow:hover{
+    fill: #C7B299;
 }
 
 .partner {
@@ -810,6 +914,9 @@ details summary::-webkit-details-marker {
     justify-content: space-around;
 }
 
+.partner_logo:hover {
+    transform: scale(1.1);
+}
 .footer {
     max-height: 625px;
     background-color: #191919;
@@ -918,6 +1025,13 @@ details summary::-webkit-details-marker {
     position: absolute;
     margin: 14px 0px;
 }
+.footer_post:hover .footer_column_second_text{
+    color: #fff;
+}
+
+.footer_post:hover .footer_column_main_text{
+    color: #C7B299;
+}
 
 .footer_padding_top{
     padding-top: 30px;
@@ -935,14 +1049,26 @@ details summary::-webkit-details-marker {
     padding-top: 6px;
 }
 
+.footer_twitter_post:hover .footer_column_second_text{
+    color: #fff;
+}
+
+.footer_twitter_post:hover .footer_column_main_text{
+    color: #C7B299;
+}
+.footer_column_main_text_link{
+    color: #00BFF3;
+}
 .footer_block_copyright {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     width: 33%;
 }
 
 .footer_copyright_cell {
     position: relative;
+
 }
 
 .footer_copyright_cell::before {
@@ -953,9 +1079,15 @@ details summary::-webkit-details-marker {
     background-color: #1A1A1A;
     position: absolute;
     bottom: 0px;
-    left: -16px;
+    left: -12px;
 }
 
 .footer_copyright_cell:first-child::before {
+    display: none;
+}
+.footer_copyright_cell:hover .footer_column_main_text{
+    color: #C7B299;
+}
+.hidden{
     display: none;
 }
