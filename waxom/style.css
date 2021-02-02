@@ -606,7 +606,6 @@ h3 {
 
 .video_heading {
     font-family: Raleway, sans-serif;
-    /* font-style: normal; */
     font-weight: 500;
     font-size: 30px;
     line-height: 35px;
@@ -1139,7 +1138,7 @@ details summary::-webkit-details-marker {
     }
 
     .menu {
-        width: 84px;
+        width: 90px;
         flex-direction: column;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -1318,6 +1317,7 @@ details summary::-webkit-details-marker {
 
     .footer_column {
         margin: 0 auto;
+        padding-top: 25px;
     }
 
     .footer_block_copyright {
@@ -1353,7 +1353,7 @@ details summary::-webkit-details-marker {
     }
     .menu{
         display: none;
-        right: 139px;
+        right: 80px;
         top: 75px;
     }
     .menu_open {
@@ -1490,6 +1490,7 @@ details summary::-webkit-details-marker {
     }
     .video_heading {
         padding-bottom: 33px;
+        text-align: center;
     }
     .video_text {
         line-height: 30px;
