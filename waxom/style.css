@@ -1362,7 +1362,7 @@ details summary::-webkit-details-marker {
     .header_top {
         padding-top: 70px;
     }
-
+    
     .slider {
         padding-top: 250px;
     }
@@ -1442,9 +1442,11 @@ details summary::-webkit-details-marker {
         height: 400px;
 
     }
+
     .purchase{
         justify-content: center;
     }
+
     .purchase_heading {
         font-size: 19px;
         line-height: 16px;
@@ -1477,77 +1479,99 @@ details summary::-webkit-details-marker {
     .text_main {
         line-height: 30px;
     }
+
     .projects_nav_buttons {
         padding: 12px 25px;
         margin-left: 17px;
         margin-bottom: 15px;
     }
+
     .projects_fig{
         margin-top: 35px;
     }
+
     .video_block{
         width: 90%;
     }
+
     .video_heading {
         padding-bottom: 33px;
         text-align: center;
     }
+
     .video_text {
         line-height: 30px;
         padding-bottom: 23px;
     }
+
     .mobile_pic {
         display: none;
     }
+
     .mobile_block {
         width: 93%;
         margin: 0 auto;
     }
+
     .mobile_list {
         margin-bottom: 30px;
     }
+
     .mobile_list_item {
         padding-left: 5px;
         line-height: 25px;
     }
+
     .mobile_list_item_padding {
         padding-left: 5px;
     }
+
     .mobile_list_item::before {
         left: 0px;
     }
+
     .counters_block {
         width: 100%;
     }
+
     .counters_block {
         flex-direction: column;
     }
+
     .counters_card {
         padding-top: 39px;
     }
+
     .counters_icon {
         padding-bottom: 16px;
     }
+
     .counters_heading {
         padding-bottom: 10px;
     }
+
     .counters_text {
         padding-bottom: 16px;
         text-transform: uppercase;
     }
+
     .counters_text::after {
         margin-top: 35px;
         margin-bottom: 0px;
     }
+
     .post_heading {
         padding-top: 85px;
     }
+
     .post_block {
         flex-direction: column;
     }
+
     .post_card {
         margin: 10px auto;
     }
+
     .post_card_description {
         border-bottom: 1px solid #f8f8f8;
         border-left: 1px solid #f8f8f8;
